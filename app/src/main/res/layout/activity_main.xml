@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎓 HSC26xFAHIM"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HSC Result Browser"
+            android:textSize="14sp"
+            android:textColor="#546E7A"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Board Spinner -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="বোর্ড সিলেক্ট করো"
+            android:textSize="14sp"
+            android:textColor="#37474F"
+            android:layout_marginBottom="6dp" />
+
+        <Spinner
+            android:id="@+id/spinnerBoard"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Roll -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="রোল নম্বর"
+            android:textSize="14sp"
+            android:textColor="#37474F"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etRoll"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="রোল লিখুন"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Registration -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="রেজিস্ট্রেশন নম্বর"
+            android:textSize="14sp"
+            android:textColor="#37474F"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etReg"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="রেজিস্ট্রেশন লিখুন"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="সার্ভার সিলেক্ট করো"
+            android:textSize="16sp"
+            android:textColor="#37474F"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnServer1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Server 1\neboardresults.com"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="12dp"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#1565C0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnServer2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Server 2\neducationboardresults.gov.bd"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#2E7D32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="তথ্য সেভ থাকবে অ্যাপ বন্ধ করলেও"
+            android:textSize="12sp"
+            android:textColor="#90A4AE"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>
